@@ -2,6 +2,7 @@
 
 # Referencia uma imagem base para a imagem que está sendo criada
 FROM node:19.7.0-alpine3.16
+EXPOSE 3000
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm i
